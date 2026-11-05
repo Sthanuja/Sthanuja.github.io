@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Somireddy Thanuja – Product Analyst, Java &amp; Kotlin Backend</title>
+<meta name="description" content="Product Analyst at Cognizant building Java and Kotlin microservices with Spring Boot, Kafka and Redis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F5F7; --surface:#FFFFFF; --ink:#12222F; --muted:#51636F; --line:#CBD6DC;
+  --accent:#0B6B85; --accent-ink:#FFFFFF; --signal:#C98A0B;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0E1A23;--surface:#15252F;--ink:#E7EEF2;--muted:#9FB1BC;--line:#2A3F4C;--accent:#5BC0DB;--accent-ink:#0E1A23;--signal:#E8B44A}
+}
+:root[data-theme="dark"]{--bg:#0E1A23;--surface:#15252F;--ink:#E7EEF2;--muted:#9FB1BC;--line:#2A3F4C;--accent:#5BC0DB;--accent-ink:#0E1A23;--signal:#E8B44A}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h2{font-size:1.9rem;margin-bottom:1.5rem}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;padding-top:.8rem;padding-bottom:.8rem;flex-wrap:wrap}
+nav b{font-family:var(--display);font-size:1.1rem;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.25rem .7rem;cursor:pointer;font:inherit;font-size:.85rem}
+.hero{padding:4.5rem 0 3rem;display:grid;gap:2.5rem;grid-template-columns:1.1fr 1fr;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;letter-spacing:-.02em}
+.hero .role{font-family:var(--display);font-size:1.35rem;color:var(--accent);margin:.9rem 0 1rem}
+.hero p{max-width:34rem;color:var(--muted);margin:0 0 1.5rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:500;border:1.5px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--accent-ink)}
+.btn.alt{color:var(--accent)}
+.flow{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem}
+.flow svg{width:100%;height:auto;display:block}
+.flow figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem}
+.flow text{font-family:var(--body);font-size:13px;fill:var(--ink)}
+.flow .box{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.flow .hub{fill:var(--accent);stroke:none}
+.flow .hubt{fill:var(--accent-ink);font-weight:500}
+.flow .wire{stroke:var(--muted);stroke-width:1.5;fill:none}
+.flow .dot{fill:var(--signal)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+.about{display:grid;gap:2rem;grid-template-columns:2fr 1fr}
+.facts{margin:0;display:grid;gap:.9rem}
+.facts div{border-left:3px solid var(--accent);padding-left:.9rem}
+.facts dt{font-family:var(--display);font-size:1.5rem;font-weight:700}
+.facts dd{margin:0;color:var(--muted);font-size:.95rem}
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.3rem}
+.job .org{color:var(--accent);margin:.2rem 0 .8rem}
+ul{padding-left:1.15rem;margin:.4rem 0}
+li{margin:.35rem 0;max-width:68ch}
+.projects{display:grid;gap:1.5rem;grid-template-columns:1.3fr 1fr}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.5rem}
+.card h3{font-size:1.4rem;margin-bottom:.5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0 1rem;padding:0;list-style:none}
+.tags li{margin:0;font-size:.85rem;border:1px solid var(--line);border-radius:999px;padding:.1rem .65rem;color:var(--muted)}
+.skills{display:grid;gap:1.25rem 2rem;grid-template-columns:repeat(2,1fr)}
+.skills h3{font-size:1.05rem;margin-bottom:.4rem}
+.skills p{margin:0;color:var(--muted)}
+.certs{columns:2;column-gap:2rem;padding-left:1.15rem}
+.certs li{break-inside:avoid}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{font-size:2.2rem}
+footer p{color:var(--muted);max-width:36rem}
+.links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1rem}
+@media (max-width:760px){
+  .hero,.about,.projects,.skills{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:.3rem}
+  .certs{columns:1}
+  .hero{padding-top:2.5rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  .dot{animation:go 4s linear infinite}
+  .d2{animation-delay:1.3s}.d3{animation-delay:2.6s}
+  @keyframes go{0%{offset-distance:0%;opacity:0}10%{opacity:1}90%{opacity:1}100%{offset-distance:100%;opacity:0}}
+  .dot{offset-path:path("M70 70 L190 70 L190 40 L330 40")}
+  .d2{offset-path:path("M70 70 L190 70 L330 70")}
+  .d3{offset-path:path("M70 70 L190 70 L190 100 L330 100")}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <b>S. Thanuja</b>
+  <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  <button id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+</div></nav>
+
+<main class="wrap">
+<header class="hero">
+  <div>
+    <h1>Somireddy Thanuja</h1>
+    <div class="role">Product Analyst · Java &amp; Kotlin backend</div>
+    <p>I build and maintain backend services at Cognizant, and in my own time I design event-driven microservices with Spring Boot, Kafka and Redis. I like clean APIs, readable code and systems that keep working when something fails.</p>
+    <div class="btns">
+      <a class="btn main" href="#projects">See my projects</a>
+      <a class="btn alt" href="mailto:somireddythanuja@gmail.com">Email me</a>
+    </div>
+  </div>
+  <figure class="flow" style="margin:0">
+    <svg viewBox="0 0 400 140" role="img" aria-label="An order event flows from the Order service through Kafka to Payment, Inventory and Notification services">
+      <rect class="box" x="8" y="52" width="62" height="36" rx="6"/><text x="39" y="74" text-anchor="middle">Order</text>
+      <rect class="hub" x="130" y="52" width="60" height="36" rx="6"/><text class="hubt" x="160" y="74" text-anchor="middle">Kafka</text>
+      <rect class="box" x="330" y="22" width="62" height="36" rx="6"/><text x="361" y="44" text-anchor="middle">Payment</text>
+      <rect class="box" x="330" y="52" width="62" height="36" rx="6"/><text x="361" y="74" text-anchor="middle" style="font-size:12px">Inventory</text>
+      <rect class="box" x="330" y="82" width="62" height="36" rx="6"/><text x="361" y="104" text-anchor="middle" style="font-size:11px">Notify</text>
+      <path class="wire" d="M70 70 L130 70"/>
+      <path class="wire" d="M190 70 L190 40 L330 40"/><path class="wire" d="M190 70 L330 70"/><path class="wire" d="M190 70 L190 100 L330 100"/>
+      <circle class="dot" r="4"/><circle class="dot d2" r="4"/><circle class="dot d3" r="4"/>
+    </svg>
+    <figcaption>How one order event moves through my e-commerce microservices project.</figcaption>
+  </figure>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about">
+    <div>
+      <p>I'm a Product Analyst at Cognizant with over a year of hands-on software development experience. I started as a Programmer Analyst Trainee writing Java services, and now contribute to backend work across several enterprise applications in an Agile team.</p>
+      <p>My day-to-day covers code reviews, integration and regression testing, and resolving production incidents while following change and incident management standards. Outside work I keep learning: I've completed five certifications and built two projects that put distributed-systems ideas into practice.</p>
+      <p>I'm looking for backend engineering roles in Bengaluru where I can grow in Java and Kotlin microservices.</p>
+    </div>
+    <dl class="facts">
+      <div><dt>1+ years</dt><dd>Software development at Cognizant</dd></div>
+      <div><dt>12+ services</dt><dd>In my e-commerce microservices project</dd></div>
+      <div><dt>5</dt><dd>Certifications: Kafka, Kotlin, Spring Boot, CI/CD, Java</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <article class="job">
+    <div class="when">May 2026 – Present<br>Bengaluru</div>
+    <div>
+      <h3>Product Analyst</h3><div class="org">Cognizant</div>
+      <ul>
+        <li>Contribute to backend development and maintenance across 3+ enterprise applications in an Agile environment.</li>
+        <li>Take part in 10+ code reviews a month, integration testing and production incident resolution.</li>
+        <li>Took part in disaster recovery planning and monitored system capacity across enterprise-scale services.</li>
+        <li>Building depth in Java, Kotlin, Spring Boot and microservices through two self-directed projects and five certifications.</li>
+      </ul>
+    </div>
+  </article>
+  <article class="job">
+    <div class="when">May 2025 – May 2026<br>Bengaluru</div>
+    <div>
+      <h3>Programmer Analyst Trainee</h3><div class="org">Cognizant</div>
+      <ul>
+        <li>Developed and maintained Java backend services across multiple modules in an Agile delivery model.</li>
+        <li>Joined 5+ code reviews a week, plus debugging sessions and structured testing.</li>
+        <li>Worked with distributed application components and contributed to integration testing across 2+ service layers.</li>
+        <li>Collaborated with cross-functional teams of 8+ people to resolve technical issues and keep systems reliable.</li>
+        <li>Followed change and incident management standards in production with zero compliance violations.</li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="card">
+      <h3>E-Commerce Microservices Backend</h3>
+      <p>A distributed backend of 12+ independent Spring Boot services, including order, payment, inventory, notification, shipping and search.</p>
+      <ul>
+        <li>Used Apache Kafka for asynchronous, event-driven communication so services stay decoupled.</li>
+        <li>Set up Eureka for service discovery and an API Gateway for unified routing.</li>
+        <li>Containerised with Docker and Kubernetes (k3d); GitHub Actions automates build and deployment.</li>
+        <li>Applied HashMaps and Queues for order routing and inventory handling.</li>
+      </ul>
+      <ul class="tags"><li>Java 17</li><li>Kotlin</li><li>Spring Boot 3</li><li>Kafka</li><li>Spring Cloud</li><li>MySQL</li><li>Docker</li><li>Kubernetes</li><li>React</li></ul>
+      <a href="https://github.com/Sthanuja/ecommerce-microservices-backend">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Redis Caching Service</h3>
+      <p>A caching layer for Spring Boot that takes load off the database and speeds up responses.</p>
+      <ul>
+        <li>Custom TTL management and JSON serialisation through RedisTemplate.</li>
+        <li>Lettuce connection pooling for thread-safe access from multiple services.</li>
+      </ul>
+      <ul class="tags"><li>Java 17</li><li>Spring Boot 3</li><li>Redis</li><li>Lettuce</li><li>Maven</li></ul>
+      <a href="https://github.com/Sthanuja/redis-caching-service">View on GitHub</a>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Languages</h3><p>Java, Kotlin, Python</p></div>
+    <div><h3>Frameworks</h3><p>Spring Boot 3, Spring Data JPA, Spring Cloud, Micronaut, React</p></div>
+    <div><h3>Messaging and caching</h3><p>Apache Kafka, Redis (Lettuce)</p></div>
+    <div><h3>Data</h3><p>MySQL, JPA/Hibernate</p></div>
+    <div><h3>DevOps</h3><p>Docker, Kubernetes, GitHub Actions, CI/CD, Git</p></div>
+    <div><h3>Engineering practice</h3><p>Microservices, REST APIs, event-driven design, distributed programming, data structures, code review, integration and regression testing, disaster recovery, change and incident management</p></div>
+  </div>
+</section>
+
+<section id="learning">
+  <h2>Certifications and education</h2>
+  <ul class="certs">
+    <li>Build RESTful APIs using Kotlin and Spring Boot (Udemy)</li>
+    <li>Spring Boot Microservices: Banking &amp; Payment System Design (Udemy)</li>
+    <li>Apache Kafka for Distributed Systems (Udemy)</li>
+    <li>Java Essentials – Refresher for Software Developers (Udemy)</li>
+    <li>Introduction to CI/CD (Udemy)</li>
+    <li>Accenture Innovation Challenge 2023, participation</li>
+  </ul>
+  <p><strong>BTech, Computer Science (AI &amp; ML)</strong><br>Sri Venkateswara College of Engineering, Tirupati · 2020–2024</p>
+</section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <h2>Let's talk</h2>
+  <p>Open to backend engineering roles in Bengaluru. The quickest way to reach me is email.</p>
+  <div class="links">
+    <a href="mailto:somireddythanuja@gmail.com">somireddythanuja@gmail.com</a>
+    <a href="https://www.linkedin.com/in/somireddyt-231a57264">LinkedIn</a>
+    <a href="https://github.com/Sthanuja">GitHub</a>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s)}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
